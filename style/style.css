@@ -666,6 +666,8 @@ body {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding-left: 16px;
+  padding-right: 16px;
+  color: #ffffff;
 }
 .btn-email {
   margin-left: 12px;
@@ -682,6 +684,7 @@ body {
   background-color: var(--fifeth-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 }
 .icon-send {
   margin-left: 10px;
@@ -884,6 +887,17 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.modal-close-icon {
+  justify-content: center;
+  align-items: center;
+  transition: fill 250ms cubic-bezier(0.6, 0.04, 0.98, 0.335);
+}
+.modal-close-icon:hover,
+.modal-close:hover {
+  fill: var(--fifeth-text-color);
+}
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -917,7 +931,7 @@ body {
   font-weight: 400;
 }
 
-.modal-button-size {
+.modal-button {
   display: block;
   align-content: center;
   justify-content: center;
@@ -933,6 +947,7 @@ body {
   background-color: var(--fifeth-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
 }
 
 .form-input-text {
@@ -994,29 +1009,25 @@ body {
   border: none;
   margin-top: 20px;
   margin-bottom: 30px;
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .checkbox-text {
   display: flex;
+  align-items: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+  height: 24px;
 }
 .checkbox-link {
   text-decoration-line: underline;
   color: #2196f3;
-  margin-left: 3px;
+  margin-left: 5px;
 }
-.modal-close-icon {
-  fill: #000000;
-  transition: fill 250ms cubic-bezier(0.6, 0.04, 0.98, 0.335);
-}
-.modal-close-icon:hover,
-.modal-close-icon:focus {
-  fill: var(--fifeth-text-color);
-  transition: fill 250ms cubic-bezier(0.6, 0.04, 0.98, 0.335);
-}
+
 .check-item {
   width: 16px;
   height: 15px;
@@ -1026,6 +1037,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: -2px;
 }
 .check-icon {
   fill: #ffffff;
